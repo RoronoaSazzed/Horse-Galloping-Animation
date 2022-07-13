@@ -1,0 +1,292 @@
+#feet-top-behind-left {
+  transform-box: fill-box;
+  transform-origin: top left;
+  transform: translate(-10px, -20px) rotate(15deg);
+  animation: feetTopBehindLeft var(--animation-duration) ease-in-out infinite
+    alternate;
+}
+
+@keyframes feetTopBehindLeft {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-10px, -20px) rotate(15deg);
+  }
+}
+
+#feet-bottom-behind-left {
+  transform-box: fill-box;
+  transform-origin: top left;
+  transform: translate(-40px, 0px) rotate(-30deg);
+  animation: feetBottomBehindLeft var(--animation-duration) ease-in-out infinite
+    alternate;
+}
+
+@keyframes feetBottomBehindLeft {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-40px, 0px) rotate(-30deg);
+  }
+}
+
+#hoof-top-behind-left {
+  transform-box: fill-box;
+  transform-origin: top left;
+  transform: translate(30px, -70px) rotate(-20deg);
+  animation: hoofTopBehindLeft var(--animation-duration) ease-in-out infinite
+    alternate;
+}
+
+@keyframes hoofTopBehindLeft {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(30px, -70px) rotate(-20deg);
+  }
+}
+
+#hoof-bottom-behind-left {
+  transform-box: fill-box;
+  transform-origin: top left;
+  transform: translate(35px, -86px) rotate(-20deg);
+  animation: hoofBottomBehindLeft var(--animation-duration) ease-in-out infinite
+    alternate;
+}
+
+@keyframes hoofBottomBehindLeft {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(35px, -86px) rotate(-20deg);
+  }
+}
+
+/* Feet Behind Right */
+
+#feet-top-behind-right {
+  transform-box: fill-box;
+  transform-origin: top left;
+  transform: translateY(-30px) rotate(15deg);
+  animation: feetTopBehindRight var(--animation-duration) ease-in-out infinite
+    alternate;
+}
+
+@keyframes feetTopBehindRight {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(-30px) rotate(15deg);
+  }
+}
+
+#feet-bottom-behind-right {
+  transform-box: fill-box;
+  transform-origin: top left;
+  transform: translate(-40px, -20px) rotate(-30deg);
+  animation: feetBottomBehindRight var(--animation-duration) ease-in-out
+    infinite alternate;
+}
+
+@keyframes feetBottomBehindRight {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-40px, -20px) rotate(-30deg);
+  }
+}
+
+#hoof-top-behind-right {
+  transform-box: fill-box;
+  transform-origin: top left;
+  transform: translate(40px, -70px) rotate(-20deg);
+  animation: hoofTopBehindRight var(--animation-duration) ease-in-out infinite
+    alternate;
+}
+
+@keyframes hoofTopBehindRight {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(40px, -70px) rotate(-20deg);
+  }
+}
+
+#hoof-bottom-behind-right {
+  transform-box: fill-box;
+  transform-origin: top left;
+  transform: translate(45px, -86px) rotate(-20deg);
+  animation: hoofBottomBehindRight var(--animation-duration) ease-in-out
+    infinite alternate;
+}
+
+@keyframes hoofBottomBehindRight {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(45px, -86px) rotate(-20deg);
+  }
+}
+
+/* Feet Front Left */
+
+#front-feet-top-left {
+  transform-box: fill-box;
+  transform-origin: top left;
+  transform: translate(0px, 0px) rotate(-20deg);
+  animation: frontFeetTopLeft var(--animation-duration) ease-in-out infinite
+    alternate;
+}
+
+@keyframes frontFeetTopLeft {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(0px, 0px) rotate(-20deg);
+  }
+}
+#front-feet-bottom-left {
+  transform-box: fill-box;
+  transform-origin: top right;
+  transform: translate(70px, 0px) rotate(55deg);
+  animation: frontFeetBottomLeft var(--animation-duration) ease-in-out infinite
+    alternate;
+}
+
+@keyframes frontFeetBottomLeft {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(70px, 0px) rotate(55deg);
+  }
+}
+
+#hoof-top-left {
+  transform-box: fill-box;
+  transform-origin: top right;
+  transform: translate(-60px, -25px) rotate(100deg);
+  animation: hoofTopLeft var(--animation-duration) ease-in-out infinite
+    alternate;
+}
+
+@keyframes hoofTopLeft {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-60px, -25px) rotate(100deg);
+  }
+}
+
+#hoof-bottom-left {
+  transform-box: fill-box;
+  transform-origin: center left;
+  transform: translate(-65px, -140px) rotate(100deg);
+  animation: hoofBottomLeft var(--animation-duration) ease-in-out infinite
+    alternate;
+}
+
+@keyframes hoofBottomLeft {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-65px, -140px) rotate(100deg);
+  }
+}
+
+/* Feet Front Right */
+
+#front-feet-top-right {
+  transform-box: fill-box;
+  transform-origin: top right;
+  transform: translate(0px, 0px) rotate(-20deg);
+  animation: frontFeetTopRight var(--animation-duration) ease-in-out infinite
+    alternate;
+}
+
+@keyframes frontFeetTopRight {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(0px, 0px) rotate(-20deg);
+  }
+}
+
+#front-feet-bottom-right {
+  transform-box: fill-box;
+  transform-origin: top right;
+  transform: translate(70px, 20px) rotate(55deg);
+  animation: frontFeetBottomRight var(--animation-duration) ease-in-out infinite
+    alternate;
+}
+
+@keyframes frontFeetBottomRight {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(70px, 20px) rotate(55deg);
+  }
+}
+
+#hoof-top-right {
+  transform-box: fill-box;
+  transform-origin: center left;
+  transform: translate(-10px, -110px) rotate(100deg);
+  animation: hoofTopRight var(--animation-duration) ease-in-out infinite
+    alternate;
+}
+
+@keyframes hoofTopRight {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-10px, -130px) rotate(100deg);
+  }
+}
+
+#hoof-bottom-right {
+  transform-box: fill-box;
+  transform-origin: center left;
+  transform: translate(-65px, -120px) rotate(100deg);
+  animation: hoofBottomRight var(--animation-duration) ease-in-out infinite
+    alternate;
+}
+
+@keyframes hoofBottomRight {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-65px, -140px) rotate(100deg);
+  }
+}

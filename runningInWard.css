@@ -1,0 +1,103 @@
+/* Feet Behind Left */
+
+#feet-top-behind-left {
+  transform-box: fill-box;
+  transform-origin: top left;
+  transform: rotate(15deg);
+}
+
+#feet-bottom-behind-left {
+  transform-box: fill-box;
+  transform-origin: top left;
+  transform: translate(-40px, 0px) rotate(-30deg);
+}
+
+#hoof-top-behind-left {
+  transform-box: fill-box;
+  transform-origin: top left;
+  transform: translate(30px, -70px) rotate(-20deg);
+}
+
+#hoof-bottom-behind-left {
+  transform-box: fill-box;
+  transform-origin: top left;
+  transform: translate(35px, -86px) rotate(-20deg);
+}
+
+/* Feet Behind Right */
+
+#feet-top-behind-right {
+  transform-box: fill-box;
+  transform-origin: top left;
+  transform: translateY(-30px) rotate(15deg);
+}
+
+#feet-bottom-behind-right {
+  transform-box: fill-box;
+  transform-origin: top left;
+  transform: translate(-40px, -20px) rotate(-30deg);
+}
+
+#hoof-top-behind-right {
+  transform-box: fill-box;
+  transform-origin: top left;
+  transform: translate(40px, -70px) rotate(-20deg);
+}
+
+#hoof-bottom-behind-right {
+  transform-box: fill-box;
+  transform-origin: top left;
+  transform: translate(45px, -86px) rotate(-20deg);
+}
+
+/* Feet Front Left */
+
+#front-feet-top-left {
+  transform-box: fill-box;
+  transform-origin: top left;
+  transform: translate(0px, 0px) rotate(-20deg);
+}
+
+#front-feet-bottom-left {
+  transform-box: fill-box;
+  transform-origin: top right;
+  transform: translate(70px, 0px) rotate(55deg);
+}
+
+#hoof-top-left {
+  transform-box: fill-box;
+  transform-origin: top right;
+  transform: translate(-60px, -25px) rotate(100deg);
+}
+
+#hoof-bottom-left {
+  transform-box: fill-box;
+  transform-origin: center left;
+  transform: translate(-65px, -140px) rotate(100deg);
+}
+
+/* Feet Front Right */
+
+#front-feet-top-right {
+  transform-box: fill-box;
+  transform-origin: top left;
+  transform: translate(0px, 0px) rotate(-20deg);
+}
+
+#front-feet-bottom-right {
+  transform-box: fill-box;
+  transform-origin: top right;
+  transform: translate(70px, 0px) rotate(55deg);
+}
+
+#hoof-top-right {
+  transform-box: fill-box;
+  transform-origin: top right;
+  transform: translate(-60px, -25px) rotate(100deg);
+}
+
+#hoof-bottom-right {
+  transform-box: fill-box;
+  transform-origin: center left;
+  transform: translate(-65px, -140px) rotate(100deg);
+}
