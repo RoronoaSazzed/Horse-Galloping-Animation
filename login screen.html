@@ -6,11 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Screen</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: "Cinzel Decorative", cursive;
       }
 
       :root {
@@ -21,6 +29,15 @@
         height: 100vh;
         position: relative;
         overflow: hidden;
+      }
+
+      .greenScreenParentalBox h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        color: rgba(0, 0, 0, 0.45);
       }
 
       .greenScreen {
@@ -134,6 +151,7 @@
       <div class="greenScreen"></div>
       <img id="horsie" src="horse.svg" alt="" />
       <img id="connector-chain" src="chariot-chain.svg" alt="" />
+      <h3>Connecting Your Account</h3>
     </div>
   </body>
 </html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preloader</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --chariotDistance: calc(0% - 270px);
+        --loading-time: 3s;
+      }
+
+      .preloaderParent {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+      }
+
+      .preLoaderGlobalWrapper {
+        width: 100%;
+        position: relative;
+      }
+
+      .chariotIcons {
+        width: 280px;
+        position: absolute;
+        top: 50%;
+        left: var(--chariotDistance);
+        transform: translate(-50%, -50%);
+        animation: iconsIn var(--loading-time) linear forwards;
+      }
+
+      @keyframes iconsIn {
+        50%,
+        100% {
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .connector {
+        width: 45px;
+        position: absolute;
+        top: 50%;
+        left: calc(var(--chariotDistance) + 180px);
+        transform: translate(-50%, -50%);
+        animation: connectorInOut var(--loading-time) linear forwards;
+      }
+
+      @keyframes connectorInOut {
+        50% {
+          left: calc(50% + 180px);
+          transform: translate(-50%, -50%);
+        }
+
+        100% {
+          left: calc(100% + 180px);
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .gallopingLoader {
+        width: 200px;
+        position: absolute;
+        position: absolute;
+        top: 50%;
+        left: calc(var(--chariotDistance) + 310px);
+        transform: translate(-50%, -50%);
+        animation: gallopingInOut var(--loading-time) linear forwards;
+      }
+
+      @keyframes gallopingInOut {
+        50% {
+          left: calc(50% + 310px);
+          transform: translate(-50%, -50%);
+        }
+
+        100% {
+          left: calc(100% + 310px);
+          transform: translate(-50%, -50%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="preloaderParent">
+      <div class="preLoaderGlobalWrapper">
+        <img class="chariotIcons" src="chariot.svg" alt="" />
+        <img class="connector" src="chariot-chain.svg" alt="" />
+        <img class="gallopingLoader" src="horse.svg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
