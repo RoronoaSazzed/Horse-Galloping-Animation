@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Screen</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --loadingTime: 4s;
+      }
+
+      .parentDiv {
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .wrapper {
+        width: 100%;
+        min-height: 100vh;
+        position: absolute;
+        left: -117%;
+        top: 0%;
+        bottom: 0%;
+        background-color: #4b9898;
+        animation: wrapperIn var(--loadingTime) linear forwards;
+      }
+
+      @keyframes wrapperIn {
+        0% {
+          opacity: 0;
+          left: -117%;
+        }
+        10%,
+        98% {
+          opacity: 1;
+        }
+
+        100% {
+          opacity: 0;
+          left: 0%;
+        }
+      }
+      #horsie {
+        width: 10vw;
+        position: absolute;
+        bottom: 0vh;
+        left: -10%;
+        animation: horsieInOut var(--loadingTime) linear forwards;
+      }
+
+      @keyframes horsieInOut {
+        100% {
+          left: 105%;
+        }
+      }
+
+      #connector-chain {
+        width: 5vw;
+        position: absolute;
+        bottom: 5vh;
+        left: -15%;
+        animation: connectorInOut var(--loadingTime) linear forwards;
+      }
+
+      @keyframes connectorInOut {
+        100% {
+          left: 100%;
+        }
+      }
+
+      @media (min-width: 481px) and (max-width: 768px) {
+        .wrapper {
+          left: -140%;
+        }
+
+        #horsie {
+          width: 10vh;
+          position: absolute;
+          bottom: 0vh;
+          left: -7%;
+        }
+
+        @keyframes horsieInOut {
+          100% {
+            left: 103%;
+          }
+        }
+
+        #connector-chain {
+          width: 5vw;
+          position: absolute;
+          bottom: 3vh;
+          left: -14%;
+        }
+      }
+
+      @media (min-width: 320px) and (max-width: 480px) {
+        .wrapper {
+          left: -150%;
+        }
+
+        #horsie {
+          width: 10vh;
+          position: absolute;
+          bottom: 0vh;
+          left: -5%;
+        }
+
+        @keyframes horsieInOut {
+          100% {
+            left: 110%;
+          }
+        }
+
+        #connector-chain {
+          width: 5vh;
+          position: absolute;
+          bottom: 3vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parentDiv">
+      <div class="wrapper"></div>
+      <img id="horsie" src="horse.svg" alt="" />
+      <img id="connector-chain" src="chariot-chain.svg" alt="" />
+    </div>
+  </body>
+</html>
