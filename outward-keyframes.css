@@ -109,7 +109,7 @@
 #full-hoof-front-right {
   transform-box: fill-box;
   transform-origin: center top;
-  transform: translate(0px, 0px) rotate(45deg);
+  transform: translate(20px, -25px) rotate(45deg);
   animation: fullHoofFrontRight var(--animation-duration) ease-in-out 0.4s
     infinite alternate-reverse;
 }
@@ -120,14 +120,14 @@
   }
 
   100% {
-    transform: translate(0px, 0px) rotate(45deg);
+    transform: translate(20px, -25px) rotate(45deg);
   }
 }
 
 #full-hoof-front-left {
   transform-box: fill-box;
   transform-origin: center top;
-  transform: translate(0px, 0px) rotate(45deg);
+  transform: translate(20px, -25px) rotate(45deg);
   animation: fullHoofFrontLeft var(--animation-duration) ease-in-out 0.3s
     infinite alternate-reverse;
 }
@@ -138,6 +138,6 @@
   }
 
   100% {
-    transform: translate(0px, 0px) rotate(45deg);
+    transform: translate(20px, -25px) rotate(45deg);
   }
 }

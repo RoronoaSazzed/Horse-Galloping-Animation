@@ -166,7 +166,7 @@
 #front-feet-bottom-left {
   transform-box: fill-box;
   transform-origin: top right;
-  transform: translate(70px, 0px) rotate(55deg);
+  transform: translate(70px, -10px) rotate(65deg);
   animation: frontFeetBottomLeft var(--animation-duration) ease-in-out infinite
     alternate;
 }
@@ -177,7 +177,7 @@
   }
 
   100% {
-    transform: translate(70px, 0px) rotate(55deg);
+    transform: translate(70px, -10px) rotate(65deg);
   }
 }
 
