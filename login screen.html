@@ -17,13 +17,13 @@
         --loadingTime: 4s;
       }
 
-      .parentDiv {
+      .greenScreenParentalBox {
         height: 100vh;
         position: relative;
         overflow: hidden;
       }
 
-      .wrapper {
+      .greenScreen {
         width: 100%;
         min-height: 100vh;
         position: absolute;
@@ -31,10 +31,10 @@
         top: 0%;
         bottom: 0%;
         background-color: #4b9898;
-        animation: wrapperIn var(--loadingTime) linear forwards;
+        animation: greenScreenIn var(--loadingTime) linear forwards;
       }
 
-      @keyframes wrapperIn {
+      @keyframes greenScreenIn {
         0% {
           opacity: 0;
           left: -117%;
@@ -78,7 +78,7 @@
       }
 
       @media (min-width: 481px) and (max-width: 768px) {
-        .wrapper {
+        .greenScreen {
           left: -140%;
         }
 
@@ -104,7 +104,7 @@
       }
 
       @media (min-width: 320px) and (max-width: 480px) {
-        .wrapper {
+        .greenScreen {
           left: -150%;
         }
 
@@ -130,8 +130,8 @@
     </style>
   </head>
   <body>
-    <div class="parentDiv">
-      <div class="wrapper"></div>
+    <div class="greenScreenParentalBox">
+      <div class="greenScreen"></div>
       <img id="horsie" src="horse.svg" alt="" />
       <img id="connector-chain" src="chariot-chain.svg" alt="" />
     </div>
